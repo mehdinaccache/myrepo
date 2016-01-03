@@ -5,4 +5,11 @@
   <groupId>DEFAULT</groupId>
   <artifactId>prj2</artifactId>
   <version>1.0.1-SNAPSHOT</version>
+  <dependencies>
+    <dependency>
+      <groupId>DEFAULT</groupId>
+      <artifactId>Base</artifactId>
+      <version>[1.4.3]</version>
+    </dependency>
+  </dependencies>
 </project>
