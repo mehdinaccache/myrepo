@@ -9,8 +9,9 @@
 42954fee-d438-4774-897a-750fd4117976.99d660ee-ddf4-48b4-8437-26aa5989fb86.callout=Cette \u00E9tape utilise la variable ... pour ....\n\nil faut faire attention et toujours faire en sorte que la variable ...
 42954fee-d438-4774-897a-750fd4117976.c0765fc1-e8a6-4473-82ff-7a07cdf5704c.callout=Persence de scriptlet permettant de ...
 42954fee-d438-4774-897a-750fd4117976.c82363f7-9063-4d5a-a0df-5cfc2fb03b79.description=<pre>This is an operation that does nothing. It can be used for filtering flow variables by feeding them in as inputs and filtering them on the results tab.\n\nResponses\:\n    success\n    failure\n</pre>
+42954fee-d438-4774-897a-750fd4117976.description=sdfsdfsdfdsfsdfsdf
 ]]></descriptionCdata>
-  <annotation></annotation>
+  <annotation>42954fee-d438-4774-897a-750fd4117976.description</annotation>
   <name>sdqsdqsdq</name>
   <categories/>
   <inputs/>
