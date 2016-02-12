@@ -5,7 +5,16 @@
   <name>azerty</name>
   <categories/>
   <inputs/>
-  <possibleResponses/>
+  <possibleResponses>
+    <opResponse id="6d6c30eb-22a7-4eb5-be54-a1ed63a61b34">
+      <annotation></annotation>
+      <name>failure</name>
+      <isDefault>false</isDefault>
+      <onFailure>true</onFailure>
+      <type>ERROR</type>
+      <matchRules/>
+    </opResponse>
+  </possibleResponses>
   <availableResultExpressions/>
   <resultExpression id="dde9b913-4c6c-4b3a-804a-88bf1de2b36d">
     <annotation></annotation>
@@ -24,5 +33,50 @@
   <checkPointFlow>true</checkPointFlow>
   <compatibleRuntimeContext>false</compatibleRuntimeContext>
   <historyCheckPointFlow>true</historyCheckPointFlow>
-  <steps/>
+  <steps>
+    <returnStep id="e3d0bf18-74e2-4677-90c7-45b37ae70887">
+      <annotation></annotation>
+      <name>Error : failure</name>
+      <bounds>
+        <x>277.0</x>
+        <y>39.0</y>
+      </bounds>
+      <layer>-1</layer>
+      <hideInbound>false</hideInbound>
+      <addResultToRunContext>false</addResultToRunContext>
+      <isCriticalStep>false</isCriticalStep>
+      <isNonBlocking>false</isNonBlocking>
+      <isParallelStep>false</isParallelStep>
+      <isSingleResponse>false</isSingleResponse>
+      <recordInHistory>false</recordInHistory>
+      <recordRawOutput>true</recordRawOutput>
+      <recordPrimaryOutput>true</recordPrimaryOutput>
+      <checkPointStep>true</checkPointStep>
+      <historyCheckPointStep>true</historyCheckPointStep>
+      <scriptResultStep>false</scriptResultStep>
+      <userPrompt></userPrompt>
+      <bindings/>
+      <transitions>
+        <transition id="e8688395-0660-4f95-a7fe-40c3405f688d">
+          <annotation></annotation>
+          <name>return</name>
+          <command>NEXT</command>
+          <linkMode>false</linkMode>
+          <responseSymbol>failure</responseSymbol>
+          <shouldHandoff>false</shouldHandoff>
+          <transitionValue>0.0</transitionValue>
+          <destination>
+            <refId>e3d0bf18-74e2-4677-90c7-45b37ae70887</refId>
+          </destination>
+          <source>
+            <refId>e3d0bf18-74e2-4677-90c7-45b37ae70887</refId>
+          </source>
+          <positions/>
+        </transition>
+      </transitions>
+      <properties/>
+      <returnStepType>ERROR</returnStepType>
+      <assignments/>
+    </returnStep>
+  </steps>
 </flow>
