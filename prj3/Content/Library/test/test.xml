@@ -5,7 +5,16 @@
   <name>test</name>
   <categories/>
   <inputs/>
-  <possibleResponses/>
+  <possibleResponses>
+    <opResponse id="9ed3e6f5-7a19-4331-bf19-2519ac40c0a6">
+      <annotation></annotation>
+      <name>failure</name>
+      <isDefault>false</isDefault>
+      <onFailure>true</onFailure>
+      <type>ERROR</type>
+      <matchRules/>
+    </opResponse>
+  </possibleResponses>
   <availableResultExpressions/>
   <resultExpression id="c196b1ef-071c-42dc-93d6-93ec69fdeb77">
     <annotation></annotation>
@@ -24,5 +33,50 @@
   <checkPointFlow>true</checkPointFlow>
   <compatibleRuntimeContext>false</compatibleRuntimeContext>
   <historyCheckPointFlow>true</historyCheckPointFlow>
-  <steps/>
+  <steps>
+    <returnStep id="8d516c38-a2f8-4111-8f3c-1b9c82afb27f">
+      <annotation></annotation>
+      <name>Error : failure</name>
+      <bounds>
+        <x>492.0</x>
+        <y>73.0</y>
+      </bounds>
+      <layer>-1</layer>
+      <hideInbound>false</hideInbound>
+      <addResultToRunContext>false</addResultToRunContext>
+      <isCriticalStep>false</isCriticalStep>
+      <isNonBlocking>false</isNonBlocking>
+      <isParallelStep>false</isParallelStep>
+      <isSingleResponse>false</isSingleResponse>
+      <recordInHistory>false</recordInHistory>
+      <recordRawOutput>true</recordRawOutput>
+      <recordPrimaryOutput>true</recordPrimaryOutput>
+      <checkPointStep>true</checkPointStep>
+      <historyCheckPointStep>true</historyCheckPointStep>
+      <scriptResultStep>false</scriptResultStep>
+      <userPrompt></userPrompt>
+      <bindings/>
+      <transitions>
+        <transition id="143231da-656e-4d49-a2ee-2d2396d7994c">
+          <annotation></annotation>
+          <name>return</name>
+          <command>NEXT</command>
+          <linkMode>false</linkMode>
+          <responseSymbol>failure</responseSymbol>
+          <shouldHandoff>false</shouldHandoff>
+          <transitionValue>0.0</transitionValue>
+          <destination>
+            <refId>8d516c38-a2f8-4111-8f3c-1b9c82afb27f</refId>
+          </destination>
+          <source>
+            <refId>8d516c38-a2f8-4111-8f3c-1b9c82afb27f</refId>
+          </source>
+          <positions/>
+        </transition>
+      </transitions>
+      <properties/>
+      <returnStepType>ERROR</returnStepType>
+      <assignments/>
+    </returnStep>
+  </steps>
 </flow>
